@@ -73,16 +73,18 @@ a {
     font-size: 14px;
     font-weight: 600;
     text-align: left;
-    transition-property: all;
-    transition-timing-function: linear;
 }
 
 a:hover {
-    animation: toleft 4s;
+    animation: left 1s linear;
 }
 
-@keyframes toleft {
+@keyframes left {
     from {right: -125px;}
     to {left: 0;
     text-align: center;}
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
